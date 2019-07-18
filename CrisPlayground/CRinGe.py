@@ -119,7 +119,7 @@ def fillData (blob,data) :
                     
 
 # Training loop
-TRAIN_EPOCH = 10.
+TRAIN_EPOCH = 2.
 blob.net.train()
 epoch = 0.
 iteration = 0.
