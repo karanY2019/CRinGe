@@ -63,7 +63,7 @@ class CRinGeNet(torch.nn.Module) :
         return self._upconvs(net).view(-1, 88*168)
 
 net = CRinGeNet().cpu()
-net.load_state_dict(torch.load("testCRinGe_10epochs_emugamma.cnn", map_location=lambda storage, loc: storage))
+net.load_state_dict(torch.load("testCRinGe.cnn", map_location=lambda storage, loc: storage))
 
 torch.set_grad_enabled(False)
 net.eval()
